@@ -1,0 +1,55 @@
+:root{
+  --blue-background: rgb(8, 59, 76);
+  --blue-box: rgb(19, 137, 178);
+  --green-box: rgb(12, 214, 161);
+  --yellow-box: rgb(255, 209, 102);
+  --red-box: rgb(240, 70, 111);
+}
+
+body{
+  background-color: var(--blue-background);
+}
+
+main {
+  padding-top: 50px;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 100px;
+  font-weight: 900;
+  color: white;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(calc(100% - calc(50px*7)) / 7);
+  aspect-ratio: 1;
+  margin: 25px;
+  font-size: 25px;
+}
+
+.box-blue {
+  background-color: var(--blue-box);
+}
+
+.box-green {
+  background-color: var(--green-box);
+}
+
+.box-yellow {
+  background-color: var(--yellow-box);
+}
+
+.box-red {
+  background-color: var(--red-box);
+}
